@@ -7,8 +7,6 @@ import axios from "axios";
 import {makeStyles} from "@mui/styles";
 import {useUser} from "../../Context/UserContext";
 import {IUser} from "../../types/IUser";
-import {UserRole} from "../../enums/UserRole";
-import {setCookie} from "nookies";
 const useStyles = makeStyles({
     input: {
         width: 400,

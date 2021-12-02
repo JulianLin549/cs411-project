@@ -1,9 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import TableRow from "@mui/material/TableRow";
-import TableCell from "@mui/material/TableCell";
-import {Box, Typography} from "@mui/material";
-import {Container} from "react-bootstrap";
+import {Typography} from "@mui/material";
 import BudgetPlansTable from "./BudgetPlansTable";
 import {Link as RouterLink} from "react-router-dom";
 import Button from "@mui/material/Button";
@@ -32,7 +29,7 @@ const BudgetPlans = () => {
             await handleGet()
         }
         fetch()
-    }, [])
+    })
     const handleGet = async () => {
         const userId = window.localStorage.getItem('user_id') || "";
         const accessToken = window.localStorage.getItem('access_token') || "";

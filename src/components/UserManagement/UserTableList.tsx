@@ -11,10 +11,8 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import TextField from "@mui/material/TextField";
 import {UserRole} from "../../enums/UserRole";
-import {useUser} from "../../Context/UserContext";
 
 export default function UserTableList() {
-    const { user } = useUser()!;
     const [userList, setUserList] = useState<Array<any>>([]);
     const [deleteId, setDeleteId] = useState<any>(null);
     const [deleteOpen, setDeleteOpen] = useState<boolean>(false);

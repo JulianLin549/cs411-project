@@ -40,7 +40,7 @@ const BudgetDecisionTable = (props: Props) => {
             await handleGet()
         }
         fetch()
-    }, [])
+    })
     const handleGet = async () => {
         const userId = window.localStorage.getItem('user_id') || "";
         const accessToken = window.localStorage.getItem('access_token') || "";

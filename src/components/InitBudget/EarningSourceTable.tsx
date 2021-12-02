@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {Container} from "react-bootstrap";
 import {Box} from "@mui/material";
 import TableContainer from "@mui/material/TableContainer";
@@ -33,7 +33,7 @@ const EarningSourceTable = (props: Props) => {
             await handleGet()
         }
         fetch()
-    }, [])
+    })
     const handleGet = async () => {
         try {
             const userId = window.localStorage.getItem('user_id') || "";

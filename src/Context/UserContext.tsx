@@ -1,7 +1,5 @@
-import {createContext, useContext, useState, ReactNode, useEffect, useMemo} from "react";
+import {createContext, useContext, useState, ReactNode, useEffect} from "react";
 import {IUser} from "../types/IUser";
-import Cookies from "js-cookie";
-import {UserRole} from "../enums/UserRole";
 
 type UserContextType = {
     user: IUser | null;

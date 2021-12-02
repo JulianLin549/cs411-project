@@ -20,7 +20,7 @@ export default function EarningSourceField(props: Props) {
             await handleSearchSubmit()
         }
         fetch()
-    }, [])
+    })
     const [amountSign, setAmountSign] = useState('=');
     const [yearSign, setYearSign] = useState('=');
 

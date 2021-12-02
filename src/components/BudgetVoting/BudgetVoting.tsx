@@ -12,7 +12,7 @@ const BudgetVotingPage = () => {
             await handleGet()
         }
         fetch()
-    }, [])
+    })
     const handleGet = async () => {
         try {
             const userId = window.localStorage.getItem('user_id') || "";
