@@ -1,4 +1,5 @@
 {
+  "homepage": "https://julianlin549.github.io/cs411-project",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -40,6 +41,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -64,6 +67,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^4.5.2",
     "webpack": "^4.44.2"
   }

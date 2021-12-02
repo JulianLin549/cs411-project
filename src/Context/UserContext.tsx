@@ -28,8 +28,6 @@ export const UserProvider = ({children}: Props) => {
             setUser(localUser);
         } else {
             setUser(null);
-            //Cookies.remove('access_token', {path: '', domain: process.env.REACT_APP_DOMAIN});
-            //window.localStorage.removeItem("current_user");
         }
     }
 
